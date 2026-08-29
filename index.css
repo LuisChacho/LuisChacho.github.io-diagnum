@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+/* Transiciones personalizadas */
+.option-card {
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.option-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Estilos de KaTeX */
+.katex-display {
+    margin: 0.5em 0 !important;
+}
