@@ -1,16 +1,16 @@
 # Simulador de Evaluación: Razonamiento Numérico (raznum)
 
-Simulador interactivo modularizado de diagnóstico con control de tiempo persistente y medidas anti-copia.
+Simulador interactivo modularizado con sistema de seguridad en pantalla completa y cuenta regresiva global estricta.
 
 ## 🚀 Características
-- **Control Estricto de Tiempo**: Temporizador individual de 1 minuto 20 segundos por reactivo con persistencia ante recargas de página.
-- **Seguridad Anti-Capturas**: Bloqueo de inspección (`F12`), clic derecho, atajos de teclado y desenfoque automático al cambiar de pestaña.
-- **Renderizado Matemático**: Soporte completo de KaTeX para ecuaciones y fracciones.
-- **Navegación Dinámica**: Matriz interactiva de 20 reactivos con estado en tiempo real.
-- **Persistencia de Sesión**: Autoguardado en caliente mediante URL Hash y LocalStorage.
+- **Cuenta Regresiva Global**: Temporizador visible de 26 minutos y 40 segundos (1 min 20 s por pregunta) persistente a recargas.
+- **Modo Kiosk / Bloqueo de Pantalla**: Exige Pantalla Completa obligatoria para rendir la prueba.
+- **Seguridad Anti-Fuga**: Detecta cuando el alumno intenta salir de la pantalla o cambiar de pestaña.
+- **Protección Visual**: Bloqueo de `PrintScreen`, menú contextual, `F12` y marcas de agua dinámicas.
+- **Renderizado Matemático**: Soporte completo de KaTeX para ecuaciones.
 
 ## 📁 Estructura del Proyecto
 - `index.html`: Estructura semántica del simulador.
-- `index.css`: Estilos personalizados y capas de seguridad visual.
-- `index.js`: Lógica del examen, temporizador estricto y banco de datos.
+- `index.css`: Estilos de interfaz y capas de desenfoque de seguridad.
+- `index.js`: Lógica del examen, temporizador global y bloqueo de pantalla.
 - `LÉAME.md`: Documentación del proyecto.

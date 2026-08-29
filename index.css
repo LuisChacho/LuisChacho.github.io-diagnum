@@ -10,7 +10,6 @@ body {
     user-select: none;
 }
 
-/* Transiciones personalizadas */
 .option-card {
     transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -20,7 +19,6 @@ body {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos de KaTeX */
 .katex-display {
     margin: 0.5em 0 !important;
 }
@@ -42,8 +40,8 @@ body {
     text-align: center;
 }
 
-/* Protección al perder el foco (Anti-captura y Anti-recorte) */
+/* Protección visual por desenfoque */
 .security-blur {
-    filter: blur(20px) !important;
-    transition: filter 0.1s ease;
+    filter: blur(25px) !important;
+    pointer-events: none !important;
 }

@@ -24,11 +24,16 @@
             <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
                 PRUEBA DIAGNÓSTICA DE RAZONAMIENTO NUMÉRICO
             </h1>
-            <p class="text-gray-600 text-lg leading-relaxed">
-                Evaluación con límite de tiempo de <strong>1 minuto y 20 segundos por reactivo</strong>. El temporizador continuará su curso incluso si recargas o cierras el navegador.
-            </p>
+            <div class="bg-amber-50 border border-amber-200 p-4 rounded-xl text-amber-900 text-sm leading-relaxed text-left space-y-2">
+                <p><strong>⚠️ Normas de Seguridad Estrictas:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Tiempo límite global: <strong>26 minutos con 40 segundos</strong>.</li>
+                    <li>La prueba se ejecutará en <strong>Modo Pantalla Completa Obligatorio</strong>.</li>
+                    <li>Si intentas salir de la pantalla completa o cambiar de pestaña, el sistema bloqueará la evaluación.</li>
+                </ul>
+            </div>
             <button id="start-btn" class="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition duration-150 shadow-md">
-                Iniciar Evaluación
+                Iniciar Evaluación en Pantalla Completa
             </button>
         </div>
     </div>
@@ -41,10 +46,10 @@
             <div class="lg:col-span-4 space-y-6">
                 <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm space-y-6">
                     
-                    <!-- Temporizador Dinámico -->
-                    <div class="bg-amber-50 border border-amber-200 p-4 rounded-xl text-center">
-                        <span class="text-xs font-bold text-amber-800 uppercase tracking-wider block mb-1">Tiempo Restante del Reactivo</span>
-                        <div id="timer-display" class="text-3xl font-extrabold text-amber-600 font-mono">01:20</div>
+                    <!-- Reloj Cuenta Regresiva Global -->
+                    <div class="bg-rose-50 border border-rose-200 p-4 rounded-xl text-center">
+                        <span class="text-xs font-bold text-rose-800 uppercase tracking-wider block mb-1">Tiempo Restante de la Prueba</span>
+                        <div id="timer-display" class="text-4xl font-black text-rose-600 font-mono tracking-widest">26:40</div>
                     </div>
 
                     <div>
@@ -78,7 +83,7 @@
 
                     <div id="options-container" class="space-y-3"></div>
 
-                    <!-- Panel de Retroalimentación -->
+                    <!-- Explicación -->
                     <div id="feedback-panel" class="hidden p-5 bg-gray-900 text-gray-100 rounded-xl space-y-2 border border-gray-800">
                         <h4 class="text-sm font-bold text-green-400 uppercase tracking-wider">Explicación Paso a Paso</h4>
                         <div id="feedback-text" class="text-sm text-gray-300 leading-relaxed"></div>
@@ -86,10 +91,10 @@
 
                     <div class="flex justify-between items-center pt-4 border-t border-gray-100">
                         <button id="prev-btn" class="px-5 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium rounded-xl transition">
-                            Reactivo Anterior
+                            Anterior
                         </button>
                         <button id="next-btn" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-xl transition">
-                            Siguiente Reactivo
+                            Siguiente
                         </button>
                     </div>
                 </div>
@@ -107,7 +112,7 @@
                 <p id="score-percentage" class="text-sm text-gray-500 mt-1">0% de aciertos</p>
             </div>
             <button id="reset-btn" class="w-full py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-xl transition">
-                Reiniciar Simulador Completo
+                Reiniciar Simulador
             </button>
         </div>
     </div>
