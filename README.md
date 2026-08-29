@@ -1,22 +1,16 @@
 # Simulador de Evaluación: Razonamiento Numérico (raznum)
 
-Simulador interactivo modularizado de diagnóstico para la evaluación de habilidades cognitivas y agilidad mental en razonamiento numérico.
+Simulador interactivo modularizado de diagnóstico con control de tiempo persistente y medidas anti-copia.
 
 ## 🚀 Características
-- **Interfaz Moderna**: Diseñada con Tailwind CSS e Inter Font.
-- **Renderizado Matemático**: Soporte completo de KaTeX para ecuaciones, fracciones y potencias.
+- **Control Estricto de Tiempo**: Temporizador individual de 1 minuto 20 segundos por reactivo con persistencia ante recargas de página.
+- **Seguridad Anti-Capturas**: Bloqueo de inspección (`F12`), clic derecho, atajos de teclado y desenfoque automático al cambiar de pestaña.
+- **Renderizado Matemático**: Soporte completo de KaTeX para ecuaciones y fracciones.
 - **Navegación Dinámica**: Matriz interactiva de 20 reactivos con estado en tiempo real.
-- **Anti-Mecanización**: Opciones aleatorizadas mediante el algoritmo Fisher-Yates.
-- **Persistencia de Sesión**: Autoguardado en caliente mediante URL Hash.
-- **Retroalimentación Paso a Paso**: Explica la resolución detallada de cada reactivo.
+- **Persistencia de Sesión**: Autoguardado en caliente mediante URL Hash y LocalStorage.
 
 ## 📁 Estructura del Proyecto
 - `index.html`: Estructura semántica del simulador.
-- `index.css`: Estilos personalizados e integraciones.
-- `index.js`: Lógica de la aplicación, datos de los reactivos y persistencia.
+- `index.css`: Estilos personalizados y capas de seguridad visual.
+- `index.js`: Lógica del examen, temporizador estricto y banco de datos.
 - `LÉAME.md`: Documentación del proyecto.
-
-## 🛠️ Despliegue en GitHub Pages
-1. Sube los archivos a tu repositorio de GitHub.
-2. Ve a **Settings** > **Pages**.
-3. En **Branch**, selecciona `main` o `master` y guarda.
